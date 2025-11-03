@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation + Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* Services */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.service-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service:hover {
+    background: #eee;
+}
+
+.icon {
+    font-size: 40px;
+    color: #d000d0;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.portfolio-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.portfolio-section p {
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+/* Layout: Menu + Gallery */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Left Menu */
+.portfolio-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.portfolio-menu li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    cursor: pointer;
+    color: #444;
+    transition: 0.3s;
+}
+
+.portfolio-menu li:hover,.portfolio-menu .active {
+    color: #b100b1;
+    font-weight: 600;
+}
+
+/* Gallery Grid */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+}
+
+.portfolio-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* Blog */
+.blog {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* Footer */
+.contact-footer {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    max-width: 300px;
+}
+
+.contact-icon {
+    background: #3d3b59;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.contact-info h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
