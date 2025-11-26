@@ -1,0 +1,26 @@
+
+
+.bg-image{
+    height: 500px;
+    width: 800px;
+    border:10px solid black;
+    border-top-left-radius:200px;
+    border-bottom-left-radius:200px;
+    border-right:none;
+    display: flex;
+    align-items: center;
+}
+
+
+.bg-inner{
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.bg-image img{
+    object-fit: contain;
+}
