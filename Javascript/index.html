@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Management CRUD</title>
     <link rel="stylesheet" href="./assest/style.css">
 </head>
-
 <body>
-
     <div class="container">
         <h1>Product Inventory Manager</h1>
-    
         <div class="form-group">
             <input type="text" id="title" placeholder="Enter Product Name">
             <input type="number" id="price" placeholder="Enter Price ($)">
-            <input type="text" id="image" placeholder="Image URL (e.g. https://...)">
-            <input type="text" id="category" placeholder="Category (e.g. Electronics)">
-            <button id="addBtn" onclick="addProduct()">Add Product</button>
+            <input type="text" id="image" placeholder="Image URL">
+            <input type="text" id="category" placeholder="Category">
+            <button id="addBtn">Add Product</button>
         </div>
     
         <div class="controls">
-            <input type="text" id="search" placeholder="Search by name..." oninput="handleSearch()" style="flex:2">
-            <select id="sortPrice" onchange="handleSort()" style="flex:1; padding: 8px;">
+            <input type="text" id="search" placeholder="Search by name..." style="flex:2">
+            <select id="sortPrice" style="flex:1; padding: 8px;">
                 <option value="">Sort by Price</option>
                 <option value="low">Low to High</option>
                 <option value="high">High to Low</option>
@@ -32,7 +28,7 @@
     
         <div id="productList"></div>
     </div>
-    <script src="./js/script.js"></script>
-</body>
 
+    <script type="module" src="./js/script.js"></script>
+</body>
 </html>
