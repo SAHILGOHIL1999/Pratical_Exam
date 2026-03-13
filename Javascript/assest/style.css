@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #eee;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+
+#addBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#addBtn:hover {
+    background-color: #218838;
+}
+
+/* Search & Filter Section */
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product List Styling */
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
+}
+
+.product-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.price {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #000;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
